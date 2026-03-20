@@ -1,3 +1,4 @@
+```
 provider "aws" {
   region = "ap-south-1"
 }
@@ -115,3 +116,4 @@ resource "aws_eks_node_group" "node" {
     aws_iam_role_policy_attachment.ecr_policy,
   ]
 }
+```
