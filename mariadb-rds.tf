@@ -29,7 +29,7 @@ resource "aws_db_instance" "mariadb" {
   allocated_storage  = 20
 
   username = "admin"
-  password = "Admin1234"
+  password = "admin123"
 
   publicly_accessible = true
   skip_final_snapshot = true
