@@ -1,3 +1,25 @@
+Install docker
+```
+sudo apt install docker.io -y
+```
+```
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+```
+sudo usermod -aG docker jenkins
+```
+```
+sudo systemctl restart docker
+sudo systemctl restart jenkins
+```
+```
+sudo su - jenkins
+docker ps
+```
+
+
+
 ```
             
 pipeline {
@@ -43,4 +65,8 @@ pipeline {
         }
     }
 }         
+```
+
+```
+http://<your-server-ip>:8080
 ```
